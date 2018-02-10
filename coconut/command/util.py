@@ -361,8 +361,8 @@ class Prompt(object):
             "multiline": self.multiline,
             "vi_mode": self.vi_mode,
             "mouse_support": self.mouse_support,
-            "lexer": prompt_toolkit.layout.lexers.PygmentsLexer(CoconutLexer),
-            "style": prompt_toolkit.styles.style_from_pygments(pygments.styles.get_style_by_name(self.style)),
+            "lexer": prompt_toolkit.lexers.PygmentsLexer(CoconutLexer),
+            "style": prompt_toolkit.styles.style_from_pygments_cls(pygments.styles.get_style_by_name(self.style)),
         }
 
 
